@@ -1,0 +1,153 @@
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+html, body {
+  height: 100%;
+}
+
+.parallax-1, .parallax-2, .parallax-3 {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.parallax-1 {
+  background-image: url('https://mdmsenquiry.com/wp-content/uploads/2019/01/IMG_20190120_181125.jpg');
+}
+
+.parallax-2 {
+  background-image: url('https://images.shiksha.com/mediadata/images/1509079929phpMg7cLo.jpeg');
+}
+
+.parallax-3 {
+  background-image: url('https://www.highereducationdigest.com/wp-content/uploads/2020/04/Img-4-10-550x330.jpg');
+}
+
+@media (max-width: 768px) {
+  .parallax-1, .parallax-2, .parallax-3 {
+    background-attachment: scroll;
+  }
+}
+.topnav {
+  overflow: hidden;
+  background-color: #FFEBCD;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #FFA500;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FFA500;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+}
+
+.topnav .search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+
+  .topnav a, .topnav input[type="text"], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type="text"] {
+    border: 1px solid #ccc;
+  }
+}
+
+.section {
+  padding: 30px;
+  margin: 5px;
+  background-color: rgba(255, 255, 255); /* Slightly transparent */
+  border-radius: 25px; /* More rounded borders */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.section-light {
+  background-color: rgba(255, 235, 205);
+}
+
+.section-dark {
+  background-color: rgba(242, 176, 70);
+  color: #fff;
+}
+
+.section-medium {
+  background-color: rgba(235, 166, 56);
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Parallax Text Styling */
+.ptext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.border {
+  padding: 16px;
+  font-size: 20px;
+  color: #FFA500;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  border-radius: 10px;
+}
