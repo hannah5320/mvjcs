@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pizza Delivery</title>
+	<style>
+body {
+  background-image: url('https://img.freepik.com/premium-vector/delicious-pizza-toppings-seamless-pattern-food-lovers_1323048-64633.jpg?semt=ais_hybrid');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  div {
+  width: 550px;
+  margin: auto;
+  background-color: #FFF4A3;
+  border-radius: 10px;
+}
+  font-family: Times New Roman;
+  .form-section {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+   .form-section div {
+            width: 30%;
+        }
+        input[type="submit"] {
+            width: 50%;
+            padding: 10px;
+            background-color: darkred;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: red;
+        }
+}
+</style>
+</head>
+<body>
+	<div>
+	<h1> PETE's PIZZA DELIVERY</h1>
+</div>
+	<div>
+	<h2 style="color: darkred;">Online Order Form</h2>
+
+	<form>
+		<h5>
+		*Name:<input type="text" name="name2" required>
+		*Tel:<input type="text" name="num" required><br> <br> 
+		*Address:<input type="text" name="Address" required>
+		*Email:<input type="text" name="email" required><br> <br>
+		*Postcode: <input type="text" name="code" required>
+		*Town/City:<input type="text" name="Town" required>
+		<h6>*Required fields</h6>
+	</h5>
+	<div class="form-section">
+	<div>
+	<h2>Topping</h2>
+	<input type="radio" name="Margherita">Margherita<br>
+	<input type="radio" name="Four Seasons">Four Seasons<br>
+	<input type="radio" name="Meat Feast">Meat Feast<br>
+</div>
+<div>
+	<h2>Size</h2>
+	<input type="radio" name="Small">Small<br>
+	<input type="radio" name="Medium">Medium<br>
+	<input type="radio" name="Large">Large<br>
+</div>
+<div>
+	<h2>Extras</h2>
+	<input type="checkbox" name="Mushrooms">Mushrooms<br>
+	<input type="checkbox" name="Green peppers">Green Peppers</label><br>
+	<input type="checkbox" name="Extra cheese">Extra Cheese<br>
+	<input type="checkbox" name="Pepperoni">Pepperoni<br><br>
+</div>
+
+</div>
+    Preferred Delivery Time:<input type="time" name="time"><br>
+    Delivery instructions:<textarea id="instructions" name="instructions"></textarea><br>
+
+    <div>
+    <input type="submit" name="Submit Order">
+</div>
+</div>
+</form>
+</body>
+</html>
